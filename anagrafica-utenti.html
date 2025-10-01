@@ -49,25 +49,79 @@
         <div class="container">
             <h1 class="mb-5">Anagrafica utenti</h1>
 
-            <button class="btn btn-primary mb-5" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
-                <i class="bi bi-person-plus-fill"></i>
-                Nuovo utente
-            </button>
+            <div class="row row-cols-1 row-cols-md-2 mb-4">
+
+
+                <div class="col">
+                    <button class="btn btn-primary mb-3" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                        <i class="bi bi-person-plus-fill"></i>
+                        Nuovo utente
+                    </button>
+                </div>
+
+
+                <div class="col">
+                    <div class="input-group mb-3">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon1">cerca</button>
+                        <input type="text" class="form-control" placeholder="nome utente.."
+                            aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
 
             <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
                 aria-labelledby="staticBackdropLabel">
+
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="staticBackdropLabel">Registrazione Nuovo utente</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
+
                 <div class="offcanvas-body">
-                    <div>
+                    <div class="mb-4">
+                        <label for="" class="form-label">Nome e cognome</label>
+                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
+                            placeholder="Inserire il nome" />
 
                     </div>
+
+                    <div class="mb-4">
+                        <label for="" class="form-label">Numero di telefono</label>
+                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
+                            placeholder="+39...." />
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="" class="form-label">Indirizzo Email</label>
+                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
+                            placeholder="prova@boolean.com" />
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="" class="form-label">Data di nascita</label>
+                        <input type="date" class="form-control" name="" id="" aria-describedby="helpId"
+                            placeholder="Inserire il nome" />
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button type="button" name="" id="" class="btn btn-primary">
+                            <i class="bi bi-plus-circle"></i> Crea utente
+                        </button>
+                    </div>
+
+
                 </div>
             </div>
-            <!-- /tendina laterale -->
+        </div>
+        <!-- /tendina laterale -->
 
         </div>
 
